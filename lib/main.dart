@@ -68,7 +68,7 @@ class _GameOfLifeState extends State<GameOfLife> {
                   children: [
                     for (var y in columns) TableCell(
                         child: (board.isCellAlive(Cell(x, y))) ?
-                          const Text('   ', style: TextStyle(backgroundColor: Colors.lightGreen),) :
+                        const Text('   ', style: TextStyle(backgroundColor: Colors.lightGreen),) :
                         const Text('   ', style: TextStyle(backgroundColor: Colors.white),),
                     )
                   ],
