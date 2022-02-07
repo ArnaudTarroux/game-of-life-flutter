@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:collection';
 import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:gameoflifeflutter/game/board.dart';
 import 'package:gameoflifeflutter/game/cell.dart';
 
@@ -67,7 +66,7 @@ class Game {
     HashSet<Cell> cells = HashSet();
     for (var x = 0; x < height; x++) {
       for (var y = 0; y < width; y++) {
-        var rand = Random.secure().nextInt(100);
+        var rand = Random.secure().nextInt(height * width);
         if (rand % 2 == 0) {
           cells.add(Cell(x, y));
         }
